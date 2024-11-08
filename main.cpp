@@ -145,29 +145,28 @@ int main()
         }
         
 
-    //     // player 2 inputs
-    //     print_board(board);
-    //     cout << "Player 2 move" << endl;
-    //     cout << "Enter row and col: ";
-    //     // cin >> row >> col;
-    //     //check boundary
-    //     auto [player2_row, player2_col] = check_boundary(board); // tuple unpacking and getting the error free row and col
-    //     board[player2_row-1][player2_col-1] = player2; // setting player 2 move
-    //     isWinner = check_winner(board);
-    //     if(isWinner == 1){
-    //         print_board(board);
-    //         cout << "Player 2 is the winner" << endl;
-    //         break;
-    //     }
+        // player 2 inputs
+        print_board(board);
+        cout << "Player 2 move" << endl;
+        cout << "Enter row and col: ";
+        // cin >> row >> col;
+        //check boundary
+        auto [player2_row, player2_col] = check_boundary(board); // tuple unpacking and getting the error free row and col
+        board[player2_row-1][player2_col-1] = player2; // setting player 2 move
+        isWinner = check_winner(board);
+        if(isWinner == 1){
+            print_board(board);
+            cout << "Player 2 is the winner" << endl;
+            break;
+        }
 
-    //      if (draw_check(board) == 1){
-    //         print_board(board);
-    //         cout << "Draw" << endl;
-    //         break;
-    //     }
+         if (draw_check(board) == 1){
+            print_board(board);
+            cout << "Draw" << endl;
+            break;
+        }
        
-    // }
+    }
 
     cout << endl;
 }
-
